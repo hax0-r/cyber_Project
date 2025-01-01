@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&family=Rock+Salt&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./src/styles/style.css">
+  <title>Crpytography & Steganography</title>
+</head>
+
+<body id="landing-page">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 pb-16 text-center lg:pt-32">
+    <p class="mx-auto -mt-4 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-6">Projects of
+      <span class="border-b border-dotted border-slate-300">Cybersecurity</span>
+    </p>
+
+    <h1 class="mx-auto max-w-5xl font-display text-5xl font-medium tracking-tight text-slate-900 sm:text-7xl">
+      <span class="inline-block">
+        <span class="relative whitespace-nowrap text-blue-600">
+          <svg aria-hidden="true" viewBox="0 0 418 42"
+            class="absolute top-2/3 left-0 h-[0.58em] w-full fill-blue-300/70" preserveAspectRatio="none">
+            <path
+              d="M203.371.916c-26.013-2.078-76.686 1.963-124.73 9.946L67.3 12.749C35.421 18.062 18.2 21.766 6.004 25.934 1.244 27.561.828 27.778.874 28.61c.07 1.214.828 1.121 9.595-1.176 9.072-2.377 17.15-3.92 39.246-7.496C123.565 7.986 157.869 4.492 195.942 5.046c7.461.108 19.25 1.696 19.17 2.582-.107 1.183-7.874 4.31-25.75 10.366-21.992 7.45-35.43 12.534-36.701 13.884-2.173 2.308-.202 4.407 4.442 4.734 2.654.187 3.263.157 15.593-.78 35.401-2.686 57.944-3.488 88.365-3.143 46.327.526 75.721 2.23 130.788 7.584 19.787 1.924 20.814 1.98 24.557 1.332l.066-.011c1.201-.203 1.53-1.825.399-2.335-2.911-1.31-4.893-1.604-22.048-3.261-57.509-5.556-87.871-7.36-132.059-7.842-23.239-.254-33.617-.116-50.627.674-11.629.54-42.371 2.494-46.696 2.967-2.359.259 8.133-3.625 26.504-9.81 23.239-7.825 27.934-10.149 28.304-14.005.417-4.348-3.529-6-16.878-7.066Z">
+            </path>
+          </svg>
+          <span class="relative">Steganography </span></span>
+      </span>
+      <span class="inline-block">Application </span>
+    </h1>
+
+    <p class="mx-auto mt-9 max-w-2xl text-lg tracking-tight text-slate-700 sm:mt-12">
+      <span class="inline-block">Hide sensitive information files, (plaintext to Chipertext) and </span>
+      <span class="inline-block">retrieve it securely.</span>
+    </p>
+
+    <div class="mt-12 flex flex-col justify-center gap-y-5 sm:mt-5 sm:flex-row sm:gap-y-0 sm:gap-x-4">
+      <a class="group inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-900 text-white hover:bg-slate-700 transition-all	duration-500 hover:text-slate-100 active:bg-slate-800 active:text-slate-300 focus-visible:outline-slate-900 animate-fade-in-left"
+        href="#encryptSection">
+        <i class="fa-solid fa-lock"></i>
+        <span class="ml-3">Encryption</span>
+      </a>
+      <div class="relative flex flex-1 flex-col items-stretch sm:flex-none" data-headlessui-state="">
+        <a href="#decrypt"
+          class="group transition-all	duration-500 inline-flex ring-1 items-center justify-center rounded-full py-2 px-4 text-sm focus:outline-none ring-slate-200 text-slate-700 hover:text-slate-900 hover:ring-slate-400 active:bg-slate-100 active:text-slate-600 focus-visible:outline-blue-600 focus-visible:ring-slate-300 animate-fade-in-right"
+          id="headlessui-menu-button-:r4:" aria-haspopup="true" aria-expanded="false" data-headlessui-state=""
+          type="button">
+          <i class="fa-solid fa-unlock text-blue-600"></i>
+          <span class="ml-3">Decryption</span>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- <div id="encrypt" style="height: 10vh;"></div> -->
+  <section id="encryptSection" class="encrypt max-w-7xl w-full mx-auto p-4 border-2 rounded-2xl">
+    <div class="encrypt-title text-center text-5xl font-semibold mt-10 text-[#1d1d1d]">Encryption</div>
+    <div class="row mt-20">
+      <div class="col-6">
+        <div class="mb-4">
+          <label for="plaintext" class="form-label font-medium mb-2">Plaintext</label>
+          <textarea class="form-control rounded-lg resize-none" id="plaintext" rows="3"
+            onkeyup="encryptCrypto()"></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="key" class="form-label font-medium mb-2">Set Password</label>
+          <input type="number" class="form-control rounded-lg" id="key" onkeyup="encryptCrypto()"
+            onchange="encryptCrypto()">
+        </div>
+        <div class="mb-4">
+          <label for="chipertext" class="form-label font-medium mb-2">Chipertext</label>
+          <textarea class="form-control resize-none" id="chipertext" rows="3" readonly></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="coverImage" class="form-label font-medium mb-2">Image</label>
+          <input class="form-control " type="file" id="coverImage" accept="image/*" onchange="handleCoverImage(this)">
+          <small style="font-size: 12px;" class="text-zinc-500">Select Only Image</small>
+        </div>
+        <button
+          class="bg-black text-white px-7 py-2 hover:opacity-80 transition-all duration-500 rounded-full btn-combine border-2 border-black"
+          id="btn-combine" onclick="handleCombine()">Encrypt</button>
+        <button
+          class="px-6 transition-all duration-500 hover:bg-red-500 hover:border-red-500 hover:text-white py-2 rounded-full border-2 border-red-400 text-red-600 btn-reset-encrypt"
+          onclick="reset()">Reset</button>
+
+      </div>
+      <div class="col-6">
+        <div class="before border-2 rounded-lg text-center overflow-hidden">
+          <!-- <img src="" alt="" id="previewBefore"> -->
+          <canvas id="canvas" class="previewCanvas mx-auto w-full h-[40vh]"></canvas>
+          <p class="text-preview text-xs text-zinc-500  py-2 text-before"></p>
+        </div>
+
+        <div class="after mt-2 border-2 rounded-lg  text-center">
+          <!-- <img src="" alt="" id="previewAfter"> -->
+          <canvas id="canvasAfter" class="previewCanvas mx-auto  h-[40vh]"></canvas>
+          <p class="text-preview text-after"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section  class="decrypt max-w-7xl w-full mb-10 mt-20 mx-auto p-4 border-2 rounded-2xl " id="decrypt">
+    <div class="decrypt-title text-center text-5xl font-semibold mt-10 text-[#1d1d1d]">Decryption</div>
+    <div class="row mt-16">
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="stegoImage" class="form-label font-medium mb-2">Steganography Image</label>
+          <input class="form-control" type="file" id="stegoImage" accept="image/*" onchange="handleStegoImage(this)">
+          <small class="text-zinc-500" style="font-size: 12px;">input file only images</small>
+        </div>
+        <!-- <img src="" alt="" class="previewStegoImage"> -->
+        <canvas id="canvasDecrypt" class="previewStegoImage border-2 previewCanvasDecrypt rounded-lg "></canvas>
+        <div class="shiftDecrypt mb-5 mt-3" style="margin-top: -20px;">
+          <label for="keyDecrypt" class="form-label font-medium mb-2">Enter Password</label>
+          <input type="number" class="form-control rounded-lg" id="keyDecrypt">
+        </div>
+        <button
+          class="bg-black text-white border-2 border-black px-7 py-2 hover:opacity-80 transition-all duration-500 rounded-full btn-decyrpt"
+          onclick="handleDecrypt()">Decrypt</button>
+        <button
+          class="px-6 transition-all duration-500 hover:bg-red-500 hover:border-red-500 hover:text-white py-2 rounded-full border-2 border-red-400 text-red-600 btn-reset-decyrpt focus:border-red-500 active:bg-red-500"
+          onclick="resetDcrypt()">Reset</button>
+      </div>
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="resultDecrypt" class="form-label font-medium mb-2">Result</label>
+          <textarea class="form-control resize-none rounded-lg" id="resultDecrypt" rows="4" readonly
+            style="opacity: 1;"></textarea>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+  <script src="./src/scripts/index.js"></script>
+</body>
+
+</html>
